@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+create_conda_env.sh
+setup.py
+oulu_knee_localizer.egg-info/PKG-INFO
+oulu_knee_localizer.egg-info/SOURCES.txt
+oulu_knee_localizer.egg-info/dependency_links.txt
+oulu_knee_localizer.egg-info/top_level.txt
+oulukneeloc/__init__.py
+oulukneeloc/detector.py
+oulukneeloc/proposals.py
+oulukneeloc/svm_model.npy

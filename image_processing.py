@@ -23,8 +23,8 @@ import gc
 import torch
 import pydicom
 from pydicom.data import get_testdata_files
-from torchvision import datasets, models, transforms
-import torchsummary
+#from torchvision import datasets, models, transforms
+#import torchsummary
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from PIL import Image
@@ -883,7 +883,7 @@ def write_out_individual_images_for_one_dataset(write_out_image_data,
 
         while not os.path.exists(base_path):
             # for some reason this command occasionally fails; make it more robust. 
-            os.system('mkdir %s' % base_path)
+            os.system('mkdir -p %s' % base_path)
             time.sleep(10)
 
         if dataset == 'BLINDED_HOLD_OUT_DO_NOT_USE':
